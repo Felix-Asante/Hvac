@@ -1,0 +1,1084 @@
+// media query
+// Tablet Mode
+@media (max-width:768px) {
+    // top-contact
+    .top-contact {
+        .container {
+            @include flexbox(row);
+            .top-info {
+                a i {
+                    display: none;
+                }
+            }
+        }
+    }
+    // head-nav
+    .head {
+        .container nav {
+            padding: 12px 40px;
+            ul {
+                li a {
+                    padding: 0 14px;
+                }
+            }
+            .car-search-cart {
+                display: none;
+            }
+        }
+    }
+    // showcase
+    header {
+        .showcase {
+            .showcase-content {
+                padding: 10px 50px;
+                @include flexbox(column);
+            }
+        }
+    }
+    // offer service
+    #offer {
+        .service-flex-card {
+            flex: none;
+            @include grid(2);
+            padding: 0 2rem;
+            margin-bottom: 25rem;
+        }
+    }
+    // features
+    #features {
+        height: 80vh;
+        .features-flex {
+            .features {
+                width: 50%;
+                p {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    // Research Cars
+    #research {
+        .research-car-grid {
+            @include grid(2);
+            padding: 0 4rem;
+        }
+    }
+    // why
+    #why {
+        img {
+            width: 50%;
+        }
+        .why-content {
+            padding: 0 0 0 4rem;
+        }
+    }
+    // blog
+    #home-blog {
+        .blog-flex {
+            flex: none;
+            @include grid(2);
+        }
+        .our-blog {
+            p {
+                text-align: center;
+                padding: 0 3rem;
+            }
+        }
+    }
+    // cars
+    .cars-display {
+        @include grid(1);
+        padding: 0 1rem;
+        .cars-filter {
+            grid-column: 1 / span 1;
+            width: 100%;
+            height: 5rem;
+            padding: 0 1rem;
+            label {
+                padding: 0;
+            }
+            .sort-by {
+                padding-left: 2rem;
+            }
+        }
+        .car-search-filter {
+            display: block;
+            padding: 0;
+            width: 100%;
+            padding-top: 6rem;
+            .search {
+                select {
+                    width: 90%;
+                    padding: 15px;
+                }
+                #price {
+                    width: 90%;
+                    padding: 15px;
+                }
+                .btn {
+                    width: 90%;
+                    font-size: 1.3rem;
+                }
+                #search-car {
+                    padding: 15px;
+                    width: 120%;
+                }
+            }
+        }
+        #research-cars {
+            .car-research-grid {
+                @include grid(2);
+                padding: 0 2rem;
+            }
+        }
+        .pagination {
+            padding-left: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    // blog page
+    .blog-page {
+        margin-top: 1rem;
+        padding: 0 1rem;
+        @include grid(1);
+        #blog-flex {
+            @include grid (2);
+            padding: 0 1rem;
+        }
+        .blog-aside {
+            padding: 2rem;
+            width: 100%;
+            background: $supplement;
+            #search {
+                padding: 18px;
+                width: 200%;
+                display: block;
+                margin-left: 40px;
+            }
+            .newsletter {
+                .form {
+                    width: 100%;
+                    input {
+                        padding: 20px;
+                    }
+                    .btn {
+                        padding: 20px;
+                        // font-size: 1.2rem;
+                    }
+                }
+                .email {
+                    width: 200%;
+                }
+            }
+        }
+        .pagination {
+            padding-left: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    // pages
+    .pages-showcase {
+        p {
+            font-size: 2rem;
+        }
+        h3 {
+            padding: 1rem 4rem;
+        }
+        .blog-img {
+            width: 100%;
+        }
+    }
+    // pages-post
+    .pages-post {
+        margin-top: 10rem;
+        #reply-post {
+            form {
+                .reply {
+                    width: 99%;
+                }
+            }
+        }
+    }
+    // About page
+    .about-welcome {
+        .container {
+            .big-img img {
+                width: 100%;
+            }
+            #vision-mission {
+                padding: 3rem;
+            }
+        }
+    }
+    #request-call-back {
+        .container {
+            .request {
+                .current {
+                    width: 40%;
+                }
+            }
+        }
+    }
+    // Team Section
+    #about-team {
+        .team-members {
+            flex: none;
+            @include grid(2);
+        }
+    }
+    // count
+    #count {
+        @include grid(2);
+        padding: 1rem 6rem;
+    }
+    // client
+    .partners {
+        .container {
+            .client {
+                @include grid(2);
+            }
+        }
+    }
+    // contact
+    #contact {
+        @include flexbox(column);
+        .work {
+            width: 100%;
+        }
+        form {
+            padding: 3rem 0;
+        }
+    }
+    // footer
+    .main-footer {
+        .contact-us {
+            padding: 4rem;
+            .btn {
+                margin: 0 0 10px 0;
+                display: block;
+            }
+        }
+        .footer-grid {
+            height: 400px;
+            grid-gap: 1rem;
+            @include grid(2);
+            padding: 2rem 5rem;
+            .info2 {
+                h2 {
+                    height: 0;
+                }
+            }
+        }
+    }
+}
+
+// smart phones
+@media screen and (max-width:500px) {
+    .top-contact {
+        display: none;
+    }
+    .head {
+        .container nav {
+            @include flexbox(column);
+            padding: 10px 5px;
+            ul {
+                li a {
+                    padding: 0 5px;
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+            .car-search-cart {
+                display: none;
+            }
+        }
+    }
+    // showcase
+    // header
+    header {
+        .showcase {
+            height: 130vh;
+            margin-bottom: 12rem;
+            .showcase-content {
+                @include flexbox(column);
+                justify-content: space-between;
+                .content-text {
+                    h2 {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    h1 {
+                        font-size: 1.9rem;
+                        line-height: 1;
+                        text-align: center;
+                        padding: 1rem 0;
+                    }
+                    .btn-small {
+                        display: block;
+                        margin: auto;
+                    }
+                    span {
+                        font-size: 1.5rem;
+                        padding: 1rem;
+                        text-align: center;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+                #car-form {
+                    width: 100%;
+                    border-bottom: 2px solid $primary-color;
+                    h1 {
+                        padding: 1rem 2rem;
+                        font-size: 18px;
+                    }
+                    .form {
+                        @include grid(1);
+                        grid-gap: 10px;
+                        grid-column-gap: 10px;
+                        select {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // offer-service
+    #offer {
+        .offer-service {
+            text-align: center;
+        }
+        .service-flex-card {
+            @include flexbox(column);
+            margin-top: 30rem;
+            margin-bottom: 30rem;
+            height: 600px;
+            .card {
+                margin-bottom: 8px;
+                margin-right: 0;
+                padding-right: 0;
+                width: 90%;
+                // height: 600px;
+            }
+        }
+    }
+    // features
+    #features {
+        margin-bottom: 1rem;
+        height: 190vh;
+        &:before {
+            background: none;
+        }
+        .features-flex {
+            @include flexbox(column);
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0 2rem;
+            .features {
+                width: 100%;
+                h1 {
+                    line-height: 1.3;
+                }
+                p {
+                    padding: 1rem;
+                }
+            }
+            .feature-grid {
+                // background: url('../img/feature/car.png') no-repeat center center/cover;
+                width: 100%;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    background: url('../img/feature/car.png') no-repeat center center/cover;
+                    opacity: 0.5;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -10;
+                }
+                p {
+                    font-size: 14px;
+                    text-align: center;
+                }
+                .feature img {
+                    height: 70%;
+                    width: 70%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    // Research Cars
+    #research {
+        .vehicles {
+            text-align: center;
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+        .research-car-grid {
+            @include grid(1);
+            margin-top: 2rem;
+            padding: 0 1rem;
+        }
+    }
+    // why
+    #why {
+        margin-top: 17rem;
+        @include flexbox(column);
+        height: 100vh;
+        img {
+            width: 120%;
+            padding-top: 1rem;
+        }
+        .why-content {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .note {
+                padding-bottom: 1rem;
+                border-bottom: 2px solid $primary-color;
+            }
+            .check {
+                padding-left: 2rem;
+                // padding-top: 4rem;
+                line-height: 1.4;
+                padding-bottom: 1rem;
+                &::before {
+                    left: 1px;
+                }
+            }
+        }
+    }
+    // home-blog
+    #home-blog {
+        margin-top: 14rem;
+        .our-blog {
+            text-align: center;
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                text-align: center;
+                width: 250px;
+            }
+        }
+        .blog-flex {
+            @include flexbox(column);
+            padding: 0 1rem;
+            .home-blog {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .blog-down {
+            @include flexbox(column);
+            max-width: 100%;
+            padding: 0;
+            .buy {
+                width: 150%;
+                // padding: 0;
+                margin-bottom: 1rem;
+                h1,
+                p {
+                    padding: 0 5rem 0 10rem;
+                }
+            }
+            .Rent {
+                width: 100%;
+            }
+        }
+    }
+    // Car.html
+    .cars-display {
+        @include grid(1);
+        padding: 0 1rem;
+        .cars-filter {
+            grid-column: 1 / span 1;
+            width: 100%;
+            height: 5rem;
+            padding: 0 1rem;
+            label {
+                padding: 0;
+            }
+            .sort-by {
+                padding-left: 2rem;
+            }
+        }
+        .car-search-filter {
+            display: block;
+            padding: 0;
+            width: 100%;
+            padding-top: 6rem;
+            .search {
+                select {
+                    width: 90%;
+                    padding: 15px;
+                }
+                #price {
+                    width: 90%;
+                    padding: 15px;
+                }
+                .btn {
+                    width: 90%;
+                    font-size: 1.3rem;
+                }
+                #search-car {
+                    padding: 15px;
+                    width: 120%;
+                }
+            }
+        }
+        #research-cars {
+            .car-research-grid {
+                @include grid(1);
+                padding: 0 2rem;
+            }
+        }
+        .pagination {
+            padding-left: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    // blog page
+    .blog-page {
+        margin-top: 1rem;
+        padding: 0 1rem;
+        @include grid(1);
+        #blog-flex {
+            @include grid (1);
+            padding: 0 1rem;
+        }
+        .blog-aside {
+            padding: 0 2rem;
+            #search {
+                padding: 15px;
+                width: 120%;
+            }
+        }
+        .pagination {
+            padding-left: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    // pages
+    .pages-showcase {
+        h3 {
+            font-size: 1rem;
+        }
+        .blog-img {
+            width: 100%;
+        }
+    }
+    // pages-post
+    .pages-post {
+        margin-top: 10rem;
+        .container>h3 {
+            padding: 2rem;
+            width: 300px;
+        }
+        a {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .author {
+            &>img {
+                display: block;
+                margin: auto;
+                float: none;
+            }
+            .auth-note {
+                float: none;
+                h2 {
+                    text-align: center;
+                }
+            }
+            .mini-ad {
+                @include flexbox(column);
+                padding: 3rem;
+                .ad-1 {
+                    margin: 1rem 0;
+                }
+            }
+            .comment {
+                &+a {
+                    margin-left: 5rem;
+                }
+            }
+        }
+        #reply-post {
+            form {
+                @include grid(1);
+                grid-gap: 0;
+                .reply {
+                    grid-column: 1 / span 1;
+                    width: 100%;
+                }
+                .name,
+                .email,
+                .website {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // About page
+    .about-welcome {
+        .container {
+            #welcome-service {
+                @include flexbox(column);
+                text-align: center;
+                .w-ser {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            .big-img img {
+                width: 100%;
+                border-radius: 5px;
+            }
+            #vision-mission {
+                @include flexbox(column);
+                .mission {
+                    margin: 15px 0;
+                }
+                .mission,
+                .vision {
+                    border: 1px solid $primary-color;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    // Request call-back
+    #request-call-back {
+        height: 80vh;
+        .container {
+            padding: 1rem 0 0 0;
+            margin: 0;
+            max-width: 100%;
+            @include flexbox(column);
+            h1 {
+                font-size: 2rem;
+                line-height: 1.4;
+            }
+            .request {
+                width: 90%;
+                text-align: center;
+                .current {
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .request-form {
+                padding: 2rem 0;
+                form {
+                    width: 90%;
+                    @include grid(1);
+                    grid-gap: 1rem;
+                }
+            }
+        }
+    }
+    // Team Section
+    #about-team {
+        .team-members {
+            @include flexbox(column);
+            .member {
+                margin: 0 0 1rem 0;
+            }
+        }
+    }
+    // About Testimonial
+    #testimonial {
+        .what {
+            h1 {
+                font-size: 2rem;
+                width: 300px;
+                line-height: 1;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+        .test {
+            @include grid(1);
+            .per {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                height: 250px;
+                animation: none;
+                transform: none;
+                h3 {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // count
+    #count {
+        @include grid(2);
+        padding: 1rem 3rem;
+        grid-gap: 5px;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    // client
+    .partners {
+        .container {
+            .client {
+                @include grid(1);
+                padding: 2rem 0;
+                .part {
+                    padding: 2rem;
+                    width: 60%;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    // contact page
+    #contact {
+        @include flexbox(column);
+        h1 {
+            line-height: 1.2;
+        }
+        form {
+            margin: 0;
+            padding: 2rem 0;
+            @include grid(1);
+            .subject {
+                grid-column: 1 / span 1;
+            }
+            input {
+                width: 100%;
+            }
+            .question-box {
+                grid-column: 1 / span 1;
+                width: 100%;
+            }
+            .btn {
+                grid-row-start: 5;
+            }
+        }
+    }
+    // address
+    #address {
+        @include grid(1);
+        & div:first-child,
+        & div:nth-child(2) {
+            border-bottom: 2px dotted $primary-color;
+        }
+    }
+    // Main footer
+    .main-footer {
+        .contact-us {
+            @include flexbox(column);
+            .btn {
+                display: block;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 12px;
+            }
+        }
+        .footer-grid {
+            @include grid(1);
+            height: 100%;
+            text-align: center;
+            padding: 0 2rem;
+            .info2 {
+                @include grid(1);
+            }
+        }
+    }
+}
+
+// Iphone 5
+@media (max-width:320px) {
+    header {
+        .showcase {
+            .showcase-content {
+                .content-text {
+                    .buttons {
+                        .btn {
+                            margin: 1rem auto;
+                            width: 60%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .offer-service
+    #offer {
+        .container {
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        margin-top: 25rem;
+        .service-flex-card {
+            padding-top: 12rem;
+            .card {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 1rem;
+            }
+        }
+    }
+    // features
+    #features {
+        .features-flex {
+            .bottoms {
+                .btn {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    // Research
+    #research {
+        .vehicles {
+            padding-top: 8rem;
+        }
+        .research-car-grid {
+            padding: 0 2rem;
+        }
+    }
+    // why
+    #why {
+        margin-top: 20rem;
+        @include flexbox(column);
+        height: 100vh;
+        img {
+            width: 100%;
+            padding-top: 1rem;
+        }
+        .why-content {
+            padding: 0 3rem;
+            h2 {
+                font-size: 1.5rem;
+            }
+            .note {
+                padding-bottom: 1rem;
+                border-bottom: 2px solid $primary-color;
+            }
+            .check {
+                padding-left: 2rem;
+                // padding-top: 4rem;
+                line-height: 1.4;
+                padding-bottom: 1rem;
+                &::before {
+                    left: 1px;
+                }
+            }
+            .btn {
+                width: 60%;
+            }
+        }
+    }
+    // .home-blog
+    #home-blog {
+        .our-blog {
+            padding-top: 5rem;
+            p {
+                padding: 0 1rem;
+            }
+        }
+    }
+    // car.html
+    .cars-display {
+        @include grid(1);
+        padding: 0 1rem;
+        .cars-filter {
+            @include flexbox(column);
+            align-items: flex-start;
+            // padding: 0;
+            grid-column: 1 / span 1;
+            width: 100%;
+            height: 150px;
+            label {
+                padding: 0;
+            }
+            .sort-by {
+                padding: 15px 5px;
+            }
+        }
+        .car-search-filter {
+            width: 100%;
+            padding-top: 10rem;
+            .search {
+                #search-car {
+                    width: 100%;
+                }
+            }
+        }
+        #research-cars {
+            .car-research-grid {
+                @include grid(1);
+                padding: 0;
+            }
+        }
+    }
+    .blog-page {
+        margin-top: 0;
+        padding: 0 1rem;
+        @include grid(1);
+        #blog-flex {
+            @include grid (1);
+            padding: 0;
+        }
+        .blog-aside {
+            padding: 0 2rem;
+            margin: 0;
+            #search {
+                padding: 15px;
+                width: 100%;
+                margin: 1rem 0;
+            }
+            .newsletter {
+                .form {
+                    @include flexbox(column);
+                    align-items: flex-start;
+                    input {
+                        width: 50%;
+                        padding: 10px;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+        .pagination {
+            padding-left: 1rem;
+            margin-bottom: 3rem;
+        }
+    }
+    // pages
+    .pages-showcase {
+        h3 {
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+        .blog-img {
+            padding-top: 1rem;
+            width: 100%;
+        }
+        .post-count {
+            padding: 0;
+            i {
+                margin: 5px;
+            }
+            .d-space {
+                display: none;
+            }
+        }
+    }
+    // pages-post
+    .pages-post {
+        margin-top: 10rem;
+        .container>h3 {
+            padding: 1rem 2rem;
+            width: 280px;
+        }
+        a {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    }
+    .about-welcome {
+        .container {
+            #vision-mission {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    #request-call-back {
+        height: 120vh;
+        .container {
+            padding: 1rem 0 0 0;
+            margin: 0;
+            max-width: 100%;
+            @include flexbox(column);
+            h1 {
+                padding-top: 8rem;
+                font-size: 2rem;
+                line-height: 1.4;
+            }
+        }
+    }
+    #testimonial {
+        .what {
+            h1 {
+                font-size: 2rem;
+                width: 300px;
+                line-height: 1;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+        .test {
+            @include grid(1);
+            .per {
+                width: 120%;
+                padding: 0;
+                margin: 0;
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .partners {
+        .container {
+            .client {
+                .part {
+                    padding: 2rem;
+                    width: 80%;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    // footer
+    .main-footer {
+        .contact-us {
+            @include flexbox(column);
+            .btn {
+                display: block;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 12px;
+            }
+        }
+        .footer-grid {
+            @include grid(1);
+            height: 100%;
+            text-align: center;
+            padding: 0 2rem;
+            .info2 {
+                @include grid(1);
+            }
+        }
+    }
+}

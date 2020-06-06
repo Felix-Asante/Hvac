@@ -1,0 +1,176 @@
+/*mixins*/
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@keyframes pers {
+  to {
+    transform: translateX(-8000px);
+  }
+}
+
+@keyframes per {
+  to {
+    transform: translateX(-2000px);
+  }
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: 1px solid #cccc;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.pagination .page {
+  margin-right: 10px;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cccc;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pagination .page:hover {
+  border-color: #db3a37;
+  color: #333333;
+}
+
+.pagination .page-1 {
+  border-color: #db3a37;
+}
+
+.space {
+  margin: 0 5px;
+}
+
+.d-space {
+  margin: 0 15px;
+  color: #ffff;
+}
+
+.new {
+  font-size: 16px;
+  color: #cccc;
+  font-weight: 600;
+}
+
+.current {
+  border-bottom: 2px solid #db3a37;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  padding: 15px;
+  color: #ffff;
+  border: none;
+}
+
+.btn-small {
+  padding: 10px;
+  color: #ffff;
+  border: none;
+}
+
+.primary-color {
+  color: #db3a37;
+}
+
+.supplement-color {
+  color: #cccc;
+}
+
+.secondary-color {
+  color: #333333;
+}
+
+.tertiary-color {
+  color: #4e7dfb;
+}
+
+.other-color {
+  color: #ffff;
+}
+
+.bg-primary {
+  background-color: #db3a37;
+  color: #ffff;
+}
+
+.bg-secondary {
+  background-color: #333333;
+  color: #ffff;
+}
+
+.bg-dark {
+  background: #333333;
+  color: #ffff;
+}
+
+.bg-sup {
+  background: #cccc;
+  color: #333333;
+}
+
+.bg-tertiary {
+  color: #ffff;
+  background-color: #4e7dfb;
+}
+
+.clr {
+  clear: both;
+}
+
+.bg-other {
+  background-color: #ffff;
+  color: #333333;
+}
+
+.btn-med {
+  width: 25%;
+  padding: 5px 8px;
+  margin: 8px 1rem;
+  border: none;
+  border: 1px solid rgba(112, 109, 109, 0.8);
+  color: #333333;
+}
+
+@media screen and (max-width: 500px) {
+  .top-contact {
+    display: none;
+  }
+  .head .container nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .head .container nav ul li a {
+    padding: 0 5px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

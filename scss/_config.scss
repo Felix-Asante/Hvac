@@ -1,0 +1,43 @@
+/*mixins*/
+
+// reset
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+// flex-box
+@mixin flexbox($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+//Grid 
+@mixin grid($size) {
+    display: grid;
+    grid-template-columns: repeat($size, 1fr);
+    grid-gap: 2rem
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@keyframes pers {
+    to {
+        transform: translateX(-8000px);
+    }
+}
+
+@keyframes per {
+    to {
+        transform: translateX(-2000px);
+    }
+}

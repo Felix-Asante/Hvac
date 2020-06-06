@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hvac | Cars</title>
+    <script src="https://kit.fontawesome.com/fc494360f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!-- section A: header & showcase -->
+    <div class="top-contact bg-secondary">
+        <div class="container">
+            <div class="top-info">
+                <h2 class="primary-color">
+                    <span><i class="far fa-clock supplement-color"></i></span> Week day:08:00am to 18:00pm
+                </h2>
+                <h2 class="primary-color">
+                    <span><i class="fas fa-envelope supplement-color"></i></span> Week day:08:00am to 18:00pm
+                </h2>
+            </div>
+            <div class="top-info">
+                <h2 class="primary-color">
+                    <span><i class="fas fa-phone-alt supplement-color"></i></span> (+12)2345 678910
+                </h2>
+                <a href=""><i class="fab fa-facebook-f other-color"></i></a>
+                <a href=""><i class="fab fa-twitter other-color"></i></a>
+                <a href=""><i class="fab fa-google other-color"></i></a>
+                <a href=""><i class="fab fa-instagram other-color"></i></a>
+            </div>
+        </div>
+    </div>
+    <section class="head">
+        <div class="container">
+            <nav class="bg-other">
+                <a href="index.html"><img src="../img/logo.png" alt="Havc-logo" /></a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="cars.html" class="current">CARS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="pages.html">PAGES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="car-search-cart">
+                    <a href="#"><i class="fas fa-cart-plus secondary-color"></i></a>
+                    <a href="#"><i class="fas fa-search secondary-color"></i></a>
+                    <a href="" class="btn bg-primary">Add Car</a>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <header>
+        <div class="cars-showcase other-color">
+            <div class="car-showcase-content">
+                <div class="cars-content-text">
+                    <h1>Car Listing</h1>
+                    <h3><span class="space"><i class="fas fa-home primary-color"> </i></span>Home<i class="fas fa-chevron-right space "></i> <span class="new">Cars</span></h3>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- section B:Cars -->
+    <section class="cars-display">
+        <div class="cars-filter bg-sup">
+            <div class="number-per-page">
+                <label for="">Show on Page</label>
+                <select name="car-per-page" id="cars-per-page">
+                    <option value="9 cars">8 cars</option>
+                    <option value="9 cars">9 cars</option>
+                    <option value="9 cars">10 cars</option>
+                    <option value="9 cars">20 cars</option>
+                </select>
+            </div>
+            <div class="sort-by">
+                <label for="">Sort By</label>
+                <select name="sort-by" id="sort-by">
+                    <option value="Price:Highest First">Price:Highest First</option>
+                    <option value="Price:Lowest First">Price:Lowest First</option>
+                </select>
+            </div>
+        </div>
+        <div class="car-search-filter">
+            <div class="search bg-sup">
+                <h2>Car Search</h2>
+                <div class="search-form">
+                    <input type="text" name="" id="search-car" class="search-car" placeholder="Search">
+                </div>
+                <h2>Car Filter</h2>
+                <select name="Brand" id="car-brand-filter">
+                    <option value="Brand" selected>Brand</option>
+                    <option value="Brand">ACura</option>
+                    <option value="Brand">Audi</option>
+                    <option value="Brand">Bently</option>
+                    <option value="Brand">BMW</option>
+                    <option value="Brand">Bugatti</option>
+                </select>
+                <select name="Model" id="car-Model-filter">
+                    <option value="Model" selected>Model</option>
+                    <option value="Q3">Q3</option>
+                    <option value="A4">A4</option>
+                    <option value="AVENTADOR">AVENTADOR</option>
+
+                </select>
+                <select name="body" id="car-body-filter">
+                    <option value="Body style" selected>Body Style</option>
+                    <option value="Option 2">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                </select>
+                <select name="Mileage" id="car-mileage-filter">
+                    <option value="Mileage" selected>Mileage</option>
+                    <option value="27">27</option>
+                    <option value="20">20</option>
+                </select>
+                <select name="Engine" id="car-engine-filter">
+                    <option value="Engine" selected>Engine</option>
+                    <option value="BS3">BS3</option>
+                    <option value="BS4">BS4</option>
+                    <option value="BS5">BS5</option>
+                    <option value="BS6">BS6</option>
+                </select>
+                <select name="color" id="car-color-filter">
+                    <option value="Color" selected>Color</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Black">Black</option>
+                    <option value="Yellow">Yellow</option>
+                </select>
+                <input type="text" name="price" id="price" class="price" placeholder="Enter Price">
+                <input type="submit" value="Apply Filter" class="btn bg-primary" id="car-search">
+
+            </div>
+        </div>
+        <div id="research-cars">
+
+            <div class="car-research-grid">
+                <div class="car-1 car">
+                    <img src="../img/cars/car-1.jpg" alt="" />
+                    <button class="btn-med bg-other">2016</button>
+                    <h2>Porsche cayenne turbo s</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplement-color space"> |</span>Auto
+                        <span class="supplement-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-tertiary">For Rent</button>
+                    <span class="primary-color">$218 <span class="supplement-color">/Month</span>
+                    </span>
+                </div>
+                <div class="car-2 car">
+                    <img src="../img/cars/car-2.jpg" alt="" />
+                    <button class="btn-med bg-other">2020</button>
+                    <h2>Toyota camry asv50l-jeteku</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplement-color space"> |</span>Auto
+                        <span class="supplement-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-primary">For Sale</button>
+                    <span class="primary-color">$73,900 </span>
+                </div>
+                <div class="car-3 car">
+                    <img src="../img/cars/car-3.jpg" alt="" />
+                    <button class="btn-med bg-other">2017</button>
+                    <h2>Bmw s1000rr 2019 m</h2>
+                    <p>
+                        35,000<span class="supplement-color space"> mi</span>
+                        <span class="supplement-color space"> |</span>Auto
+                        <span class="supplement-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-tertiary">For Rent</button>
+                    <span class="primary-color">$299 <span class="supplement-color">/Month</span>
+                    </span>
+                </div>
+                <div class="car-4 car">
+                    <img src="../img/cars/car-4.jpg" alt="" />
+                    <button class="btn-med bg-other">2019</button>
+                    <h2>Lamborghini huracan evo</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplement-color space"> |</span>Auto
+                        <span class="supplement-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-primary">For Sale</button>
+                    <span class="primary-color">$120,000 </span>
+                </div>
+                <div class="car-5 car">
+                    <img src="../img/cars/car-5.jpg" alt="" />
+                    <button class="btn-med bg-other">2018</button>
+                    <h2>Audi q8 2020</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplemnt-color space"> |</span>Auto
+                        <span class="supplemnt-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-tertiary">For Rent</button>
+                    <span class="primary-color">$319 <span class="supplement-color">/Month</span>
+                    </span>
+                </div>
+                <div class="car-6 car">
+                    <img src="../img/cars/car-6.jpg" alt="" />
+                    <button class="btn-med bg-other">2016</button>
+                    <h2>Mustang shelby gt500</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplemnt-color space"> |</span>Auto
+                        <span class="supplemnt-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-primary">For Sale</button>
+                    <span class="primary-color">$730,900 </span>
+                </div>
+                <div class="car-7 car">
+                    <img src="../img/cars/car-7.jpg" alt="" />
+                    <button class="btn-med bg-other">2020</button>
+                    <h2>Lamborghini aventador A90</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplemnt-color space"> |</span>Auto
+                        <span class="supplemnt-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-tertiary">For Rent</button>
+                    <span class="primary-color">$442 <span class="supplement-color">/Month</span>
+                    </span>
+                </div>
+                <div class="car-8 car">
+                    <img src="../img/cars/car-8.jpg" alt="" />
+                    <button class="btn-med bg-other">2016</button>
+                    <h2>Porsche cayenne turbo s</h2>
+                    <p>
+                        35,000<span class="supplemnt-color space"> mi</span>
+                        <span class="supplemnt-color space"> |</span>Auto
+                        <span class="supplemnt-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-tertiary">For Rent</button>
+                    <span class="primary-color">$322 <span class="supplement-color">/Month</span>
+                    </span>
+                </div>
+                <div class="car-9 car">
+                    <img src="../img/cars/car-3.jpg" alt="" />
+                    <button class="btn-med bg-other">2017</button>
+                    <h2>Bmw s1000rr 2019 m</h2>
+                    <p>
+                        35,000<span class="supplement-color space"> mi</span>
+                        <span class="supplement-color space"> |</span>Auto
+                        <span class="supplement-color space"> |</span>700<span class="supplemnt-color space">
+                            hp</span>
+                    </p>
+                    <button class="btn bg-tertiary">For Rent</button>
+                    <span class="primary-color">$299 <span class="supplement-color">/Month</span>
+                    </span>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="page page-1">1</div>
+                <div class="page page-2">2</div>
+                <div class="page page-3">3</div>
+                <div class="page page-4"><i class="fas fa-angle-double-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main-footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="contact-us">
+                <h1>Contact Us Now!</h1>
+                <div class="conct-btn">
+                    <a href="" class="btn bg-primary"><i class="fas fa-phone-alt other-color"></i>(+12)345 6789 000</a>
+                    <a href="" class="btn bg-other"><i class="fas fa-envelope primary-color"></i>
+                        Colorlib@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-grid">
+                <div class="branding">
+                    <img src="../img/footer-logo.png" alt="Hvac-logo" />
+                    <p>
+                        Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us on (+1) 96 123 8888
+                    </p>
+                    <a href=""><i class="fab fa-facebook-f other-color face"></i></a>
+                    <a href=""><i class="fab fa-twitter other-color tweet"></i></a>
+                    <a href=""><i class="fab fa-google other-color google"></i></a>
+                    <a href=""><i class="fab fa-skype other-color skype"></i></a>
+                </div>
+                <div class="info1">
+                    <h2>Information</h1>
+                        <ul>
+                            <li><a href=""><i class="fas fa-chevron-right "></i>Purchase</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i>Payement</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i>Purchase</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Shipping</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Return</a></li>
+                        </ul>
+                </div>
+                <div class="info3">
+                    <h2>Information</h1>
+                        <ul>
+                            <li><a href=""><i class="fas fa-chevron-right "></i>Hatchback</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Sedan</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> SUV</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Crossover</a></li>
+                        </ul>
+                </div>
+                <div class="info2">
+                    <h2>Top Brand</h1>
+                        <ul>
+                            <li><a href=""><i class="fas fa-chevron-right "></i>Abarth</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Acura</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Alfa Romeo</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> BMW</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Chevrolet</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Ferrari</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right "></i> Honda</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

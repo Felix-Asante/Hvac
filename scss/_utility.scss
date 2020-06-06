@@ -1,0 +1,140 @@
+$primary-color:#db3a37;
+$secondary-color:#333333;
+$supplement:#cccc;
+$tertiary-color:#4e7dfb;
+$other-color:#ffff;
+$new-color:#cccc;
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: 1px solid $supplement;
+}
+
+.pagination {
+    @include flexbox(row);
+    justify-content: flex-start;
+    padding-top: 3rem;
+    .page {
+        margin-right: 10px;
+        padding: 1rem;
+        width: 50px;
+        height: 50px;
+        border: 1px solid $supplement;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            border-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+    .page-1 {
+        border-color: $primary-color;
+    }
+}
+
+.space {
+    margin: 0 5px;
+}
+
+.d-space {
+    margin: 0 15px;
+    color: $other-color;
+}
+
+.new {
+    font-size: 16px;
+    color: $new-color;
+    font-weight: 600;
+}
+
+.current {
+    border-bottom: 2px solid $primary-color;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    padding: 15px;
+    color: $other-color;
+    border: none;
+}
+
+.btn-small {
+    padding: 10px;
+    color: $other-color;
+    border: none;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.supplement-color {
+    color: $supplement;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.tertiary-color {
+    color: $tertiary-color;
+}
+
+.other-color {
+    color: $other-color;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+    color: $other-color;
+}
+
+.bg-secondary {
+    background-color: $secondary-color;
+    color: $other-color;
+}
+
+.bg-dark {
+    background: $secondary-color;
+    color: $other-color;
+}
+
+.bg-sup {
+    background: $supplement;
+    color: $secondary-color;
+}
+
+.bg-tertiary {
+    color: $other-color;
+    background-color: $tertiary-color;
+}
+
+.clr {
+    clear: both;
+}
+
+.bg-other {
+    background-color: $other-color;
+    color: $secondary-color;
+}
+
+.btn-med {
+    width: 25%;
+    padding: 5px 8px;
+    margin: 8px 1rem;
+    border: none;
+    border: 1px solid rgba(112, 109, 109, 0.8);
+    ;
+    color: $secondary-color;
+}
